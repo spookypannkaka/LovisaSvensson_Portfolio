@@ -1,0 +1,42 @@
+[
+    {
+        "name": "C++",
+        "image": "C++_logo.png"
+    },
+    {
+        "name": "C#",
+        "image": "Csharp_logo.png"
+    },
+    {
+        "name": "JavaScript",
+        "image": ""
+    },
+    {
+        "name": "Python",
+        "image": ""
+    },
+    {
+        "name": "Java",
+        "image": ""
+    },
+    {
+        "name": "Unity",
+        "image": ""
+    },
+    {
+        "name": "ReactJS",
+        "image": ""
+    },
+    {
+        "name": "React Native",
+        "image": ""
+    },
+    {
+        "name": "Next.js",
+        "image": ""
+    },
+    {
+        "name": "MATLAB",
+        "image": ""
+    }
+]
