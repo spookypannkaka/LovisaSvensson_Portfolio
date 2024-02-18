@@ -5,20 +5,21 @@ h1 {
     font-size: 70px;
     font-weight: 500;
     letter-spacing: 1px;
-    color: #332b48;
+    color: #FC9BD3;
     margin-top: 0px;
     margin-bottom: 5px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 h2 {
     font-family: 'Kanit', sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 500;
     letter-spacing: 1px;
-    color: #332b48;
+    color: #FC9BD3;
     margin-top: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-left: 30px;
     text-transform: uppercase;
 }
@@ -27,15 +28,39 @@ h3 {
     font-family: 'PT Sans';
     font-size: 26px;
     font-weight: 300;
-    color: #332B48;
+    color: #FDCCE8;
     margin-top: 0px;
+    margin-left: 30px;
 }
 
 p {
     font-family: 'PT Sans';
-    font-size: 20px;
+    font-size: 16px;
     color: #332B48;
     margin-top: 0px;
     margin-bottom: 0px;
     line-height: 1.4;
+}
+
+/* Media query for screens smaller than 600px (common breakpoint for mobile devices) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 36px; /* Smaller size for mobile */
+        margin-bottom: 3px; /* Adjusted spacing for mobile */
+    }
+
+    h2 {
+        font-size: 30px; /* Smaller size for mobile */
+        margin-bottom: 5px; /* Adjusted spacing for mobile */
+        margin-left: 15px; /* Adjusted spacing for mobile */
+    }
+
+    h3 {
+        font-size: 20px; /* Smaller size for mobile */
+        margin-left: 15px;
+    }
+
+    p {
+        font-size: 14px; /* Slightly smaller size for mobile */
+    }
 }

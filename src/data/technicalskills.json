@@ -9,34 +9,34 @@
     },
     {
         "name": "JavaScript",
-        "image": ""
+        "image": "JavaScript_logo.png"
     },
     {
         "name": "Python",
-        "image": ""
+        "image": "Python_logo.png"
     },
     {
         "name": "Java",
-        "image": ""
+        "image": "Java_logo.png"
     },
     {
         "name": "Unity",
-        "image": ""
+        "image": "Unity_logo.png"
     },
     {
         "name": "ReactJS",
-        "image": ""
+        "image": "ReactJS_logo.png"
     },
     {
         "name": "React Native",
-        "image": ""
+        "image": "ReactJS_logo.png"
     },
     {
         "name": "Next.js",
-        "image": ""
+        "image": "Nextjs_logo.png"
     },
     {
         "name": "MATLAB",
-        "image": ""
+        "image": "Matlab_logo.png"
     }
 ]

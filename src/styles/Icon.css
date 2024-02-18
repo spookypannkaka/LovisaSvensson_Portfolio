@@ -1,0 +1,19 @@
+.icon {
+    fill: currentColor; /* Use 'currentColor' so it inherits from 'color' property */
+    color: #DABAFF; /* Initial color */
+    transition: color 0.3s; /* Smooth transition for color change */
+    width: 70px;
+    height: 70px;
+    position: relative;
+  }
+  
+.icon:hover {
+    color: #D4FAFF; /* Color on hover */
+}
+
+@media (max-width: 600px) {
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+}

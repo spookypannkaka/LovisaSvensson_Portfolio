@@ -10,16 +10,16 @@ function SkillCard({skill}) {
 const styles = {
     container: {
         backgroundColor: '#FDCCE8',
-        width: '150px',
-        height: '150px',
-        border: '10px solid #fc9bd3',
+        width: '100px',
+        height: '100px',
+        border: '5px solid #fc9bd3',
         borderRadius: 10,
 
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        gap: '5px'
+        gap: '5px 5px'
     },
     image: {
         width: '50%',

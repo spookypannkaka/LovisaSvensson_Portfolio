@@ -1,21 +1,18 @@
-function ProjectCard({project, customStyles}) {
+function ProjectCard({project}) {
     return (
-      <div style={customStyles.container}>
-        <div style={customStyles.gifContainer}>
+      <div style={notableStyle.container}>
+        <div style={notableStyle.gifContainer}>
             <img 
                 src={`${process.env.PUBLIC_URL}/images/fireworks.gif`}
                 alt="Project animation" 
-                style={customStyles.gifImage}
+                style={notableStyle.gifImage}
             />
         </div>
         <div style={cardContent}>
             <span style={textStyles.titleText}>{project.name} ({project.year})</span>
-            <span style={textStyles.projectTypeText}>Type of project: {project.type}</span>
+            <span style={textStyles.projectTypeText}>{project.type}</span>
             <span style={textStyles.projectLanguageText}>Technologies: {project.technologies} / Languages: {project.languages}</span>
-            <p style={{width: '80%', marginTop: '10px'}}>{project.short_desc}</p>
-            <div style={arrowContainer}>
-                <img src={`${process.env.PUBLIC_URL}/images/expand_more.png`}/>
-            </div>
+            <p style={textStyles.projectDescriptionText}>{project.short_desc}</p>
         </div>
       </div>
     );
@@ -49,6 +46,14 @@ const textStyles = {
         marginTop: '0px',
         textTransform: 'uppercase',   
     },
+    projectDescriptionText: {
+        fontFamily: 'PT Sans',
+        fontSize: '16px',
+        fontWeight: 300,
+
+        width: '80%',
+        marginTop: '10px'
+    },
 }
 
 const cardContent = {
@@ -67,4 +72,31 @@ const arrowContainer = {
     height: '20px',
 }
 
+const notableStyle = {
+    container: {
+      position: 'relative',
+        backgroundColor: '#FDCCE8',
+        width: '550px',
+        height: '550px',
+        boxShadow: 'box-shadow: 10px 10px 5px #332b48',
+        
+        // Flexbox
+        display: 'flex',
+        flexDirection: 'column',
+  
+        // Border
+        border: '5px solid #fc9bd3',
+    },
+    gifContainer: {
+        width: '100%',
+        //height: '150px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    gifImage: {
+        width: '100%', // Adjust as needed
+        height: 'auto' // Adjust as needed
+    },
+  }
 export default ProjectCard;
