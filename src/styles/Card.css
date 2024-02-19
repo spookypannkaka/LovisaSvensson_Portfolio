@@ -1,0 +1,14 @@
+.project-card-container {
+    position: relative;
+    background-color: #FDCCE8;
+    width: 550px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #fc9bd3; /* Default border color */
+    transition: border-color 0.3s;
+}
+
+.project-card-container:hover {
+    border: 5px solid #D4FAFF; /* New border color on hover */
+}

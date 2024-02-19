@@ -57,7 +57,7 @@ function StarrySky() {
 
   }, []);
 
-  return <canvas ref={canvasRef} style={{position: 'absolute', width: '100%', height: '100%',}} />;
+  return <canvas ref={canvasRef} style={{position: 'absolute', width: '100%', height: '100%', pointerEvents: 'none',}} />;
 }
 
 export default StarrySky;

@@ -1,6 +1,8 @@
+import '../styles/Card.css'
+
 function ProjectCard({project}) {
     return (
-      <div style={notableStyle.container}>
+      <div /*style={notableStyle.container}*/ className="project-card-container">
         <div style={notableStyle.gifContainer}>
             <img 
                 src={`${process.env.PUBLIC_URL}/images/fireworks.gif`}
@@ -61,6 +63,7 @@ const cardContent = {
     marginLeft: '15px',
     display: 'flex',
     flexDirection: 'column',
+    position: 'relative',
 }
 
 const arrowContainer = {
