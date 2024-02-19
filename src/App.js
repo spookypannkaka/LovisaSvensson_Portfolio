@@ -1,5 +1,6 @@
+import React, { useState, useEffect } from 'react';
 import StarrySky from './components/StarrySky.js'
-import Header from './components/Header.js'
+import FixedHeader from './components/FixedHeader.js'
 import Banner from './components/Banner.js'
 import About from './components/About.js'
 import ProjectCard from './components/ProjectCard.js'
@@ -13,7 +14,7 @@ function App() {
 
   return (
     <div style={styles.container}>
-      {/*<Header/>*/}
+      <FixedHeader/>
       <Banner/>
 
       {/*<About/>*/}

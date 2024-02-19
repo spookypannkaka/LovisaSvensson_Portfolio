@@ -1,4 +1,4 @@
-.icon {
+.bannericon {
     fill: currentColor; /* Use 'currentColor' so it inherits from 'color' property */
     color: #DABAFF; /* Initial color */
     transition: color 0.3s; /* Smooth transition for color change */
@@ -7,7 +7,7 @@
     position: relative;
   }
   
-.icon:hover {
+.bannericon:hover {
     color: #D4FAFF; /* Color on hover */
 }
 
