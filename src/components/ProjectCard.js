@@ -4,11 +4,21 @@ function ProjectCard({project}) {
     return (
       <div /*style={notableStyle.container}*/ className="project-card-container">
         <div style={notableStyle.gifContainer}>
-            <img 
-                src={`${process.env.PUBLIC_URL}/images/fireworks.gif`}
+            {/*<img 
+                src={`${process.env.PUBLIC_URL}/images/beehive.gif`}
                 alt="Project animation" 
                 style={notableStyle.gifImage}
-            />
+    />*/}
+            <video 
+                src={`${process.env.PUBLIC_URL}/videos/${project.video}`} // Change the path to your video file
+                alt="Project animation" 
+                style={notableStyle.gifImage}
+                autoPlay 
+                loop 
+                muted // This is often necessary to autoplay in browsers
+                playsInline // Helps with autoplay on mobile devices
+                disablePictureInPicture
+            ></video>
         </div>
         <div style={cardContent}>
             <span style={textStyles.titleText}>{project.name} ({project.year})</span>

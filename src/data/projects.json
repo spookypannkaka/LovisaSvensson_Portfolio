@@ -5,6 +5,7 @@
         "type": "Competitive online multiplayer game",
         "technologies": "Unity, Netcode for GameObjects, Relay",
         "languages": "C#",
+        "video": "beehive.mp4",
         "short_desc": "Two players compete to fill the the highest amount of hexagons. A solo project to develop an online multiplayer game using Unity Netcode for GameObjects as the multiplayer framework.",
         "long_desc": "This goes into more detail about what I did in the project"
     },
@@ -14,7 +15,8 @@
         "type": "Local co-op splitscreen game",
         "technologies": "Unity",
         "languages": "C#",
-        "short_desc": "Two players cooperate to get through a spaceship by solving puzzles without seeing what is on the other player's screen. The game was developed to be played in a public environment using different physical controls to play.",
+        "video": "thespaceship.mp4",
+        "short_desc": "Two players cooperate to get through a spaceship by solving puzzles without seeing what is on the other player's screen. The game was developed to be played in a public environment using different physical arcade controllers to play.",
         "long_desc": "This goes into more detail about what I did in the project"
     },
     {
@@ -23,6 +25,7 @@
         "type": "Web-based, voice-driven game",
         "technologies": "P5.js",
         "languages": "JavaScript",
+        "video": "sjungandephadderister.mp4",
         "short_desc": "Steer your character by making higher or lower tones with your voice and collect candies. A web game entirely hard coded in JavaScript.",
         "long_desc": "This goes into more detail about what I did in the project"
     },
@@ -32,6 +35,7 @@
         "type": "Book-recommending website",
         "technologies": "Flask, React",
         "languages": "Python, JavaScript",
+        "video": "thebookrecommender.mp4",
         "short_desc": "A machine learning project to allow web users to write a description for a book they would like to read, upon which the website recommends a set of books to them.",
         "long_desc": "This goes into more detail about what I did in the project"
     },
@@ -41,6 +45,7 @@
         "type": "Web-based app with board game tools",
         "technologies": "React",
         "languages": "JavaScript",
+        "video": "beehive.mp4",
         "short_desc": "An app that lets users use game tools like rolling dice, flipping a coin, count points, run timers and more.",
         "long_desc": "This goes into more detail about what I did in the project"
     },
@@ -50,6 +55,7 @@
         "type": "Web-based search tool for lego pieces",
         "technologies": "MySQL",
         "languages": "PHP",
+        "video": "beehive.mp4",
         "short_desc": "A website that lets users search for lego pieces and find more information for which lego set they are from.",
         "long_desc": "This goes into more detail about what I did in the project"
     }

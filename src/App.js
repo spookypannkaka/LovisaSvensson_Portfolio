@@ -28,7 +28,6 @@ function App() {
             <ProjectCard key={index} project={project} />
           ))}
         </div>
-        <StarrySky />
       </div>
 
       <div style={{height: '100px', background: 'linear-gradient(#3C4059, #4C587E)'}}/>
