@@ -2,7 +2,7 @@ import '../styles/Card.css'
 
 function DurationIcon() {
     return (
-        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 11h6v1h-7v-9h1v8z" fill="#D4FAFF"/></svg>
+        <svg className="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 11h6v1h-7v-9h1v8z" fill="#D4FAFF"/></svg>
     );
 }
 
@@ -13,8 +13,7 @@ function PeopleIcon() {
    x="0px"
    y="0px"
    version="1.1"
-   width="30"
-   height="30">
+   className="icon">
   <g
      id="g148"
      transform="matrix(1.6480449,0,0,1.6480449,-2.7779358,-3.690144)">
@@ -37,7 +36,7 @@ function PeopleIcon() {
 
 function ToolsIcon() {
     return (
-<svg fill="#000000" height="24px" width="24px"
+<svg className="icon"
 	 viewBox="0 0 489.347 489.347" >
 <g>
 	<path d="M412.642,345.939l-59.523-14.229l-66.352-66.352l51.12-51.055c11.874,4.167,24.216,6.203,36.499,6.202
@@ -87,16 +86,16 @@ function ProjectCard({project}) {
                 playsInline
                 disablePictureInPicture
             ></video>
-            <div style={notableStyle.overlay}>
+            <div style={notableStyle.overlay} className="overlay-text">
                 <div style={notableStyle.iconTextContainer}>
                     <DurationIcon/>
                     {project.duration}
                 </div>
-                <div style={notableStyle.iconTextContainer}>
+                <div style={notableStyle.iconTextContainer} className="overlay-text">
                     <PeopleIcon/>
                     {project.group_size}
                 </div>
-                <div style={notableStyle.iconTextContainer}>
+                <div style={notableStyle.iconTextContainer} className="overlay-text">
                     <ToolsIcon/>
                     {project.technologies}
                 </div>

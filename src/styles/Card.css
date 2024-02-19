@@ -34,3 +34,29 @@
 .project-card-container:hover .arrow-icon {
     fill: #D4FAFF; /* Arrow color on card hover */
 }
+
+.overlay-text {
+    font-size: 12px; /* Example default size */
+    /* Other styling */
+}
+
+/* Styles for screens less than 600px wide */
+@media (max-width: 600px) {
+    .overlay-text {
+        font-size: 8px; /* Smaller font size for mobile devices */
+        /* Any additional adjustments for smaller screens */
+    }
+}
+
+.icon {
+    width: 24px; /* Default width for larger screens */
+    height: 24px; /* Default height for larger screens */
+}
+
+/* Responsive adjustments for screens less than 600px wide */
+@media (max-width: 600px) {
+    .icon {
+        width: 20px; /* Smaller width for mobile devices */
+        height: 20px; /* Smaller height for mobile devices */
+    }
+}
