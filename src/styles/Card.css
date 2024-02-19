@@ -12,3 +12,25 @@
 .project-card-container:hover {
     border: 5px solid #D4FAFF; /* New border color on hover */
 }
+
+.read-more {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    color: #332b48;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.read-more:hover {
+    color: #D4FAFF; /* Change color on hover */
+    /* Add any other hover styles here */
+}
+
+.arrow-icon {
+    fill: #332b48; /* Initial arrow color */
+}
+
+.project-card-container:hover .arrow-icon {
+    fill: #D4FAFF; /* Arrow color on card hover */
+}
