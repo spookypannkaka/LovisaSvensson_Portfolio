@@ -1,10 +1,14 @@
 function SkillCard({skill}) {
-    return (
-      <div style={styles.container}>
-        <img src={`${process.env.PUBLIC_URL}/images/${skill.image}`} alt={`${skill.name} logotype`} style={styles.image}/>
-        <p>{skill.name}</p>
-      </div>
-    );
+  const preventDragHandler = (e) => {
+    e.preventDefault();
+  };
+
+  return (
+    <div style={styles.container} onDragStart={preventDragHandler}>
+      <img src={`${process.env.PUBLIC_URL}/images/${skill.image}`} alt={`${skill.name} logotype`} style={styles.image}/>
+      <p>{skill.name}</p>
+    </div>
+  );
 }
 
 const styles = {
@@ -23,7 +27,8 @@ const styles = {
     },
     image: {
         width: '50%',
-        height: 'auto',
+        height: '50%',
+        userSelect: 'none',
     }
 }
   

@@ -39,7 +39,7 @@ function FixedHeader() {
   return (
     <header className={`fixed-header ${isScrolled ? 'scrolled' : 'not-scrolled'}`}>
       <nav>
-        <a href="https://www.lovisasvensson.se/">
+        <a href="https://www.lovisasvensson.se/" style={{textDecoration: 'none'}}>
           <h2 className='text'>Lovisa Svensson</h2>
         </a>
       </nav>
