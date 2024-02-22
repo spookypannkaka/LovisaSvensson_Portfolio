@@ -36,6 +36,10 @@
     margin-bottom: 16px;
 }
 
+.link {
+    color: #332B48;
+}
+
 .link:hover {
     color: #D4FAFF;
 }
