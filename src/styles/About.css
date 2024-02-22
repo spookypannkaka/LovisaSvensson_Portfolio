@@ -3,6 +3,7 @@
     flex-direction: column;
     background-color: #8977C9;
     width: 100%;
+    pointer-events: none;
 }
   
 .textArea {

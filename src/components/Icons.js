@@ -25,7 +25,7 @@ export function GitHubIcon({ size = 70, includeLink = true }) {
   
 export function LinkedInIcon({ size = 70 }) {
   return (
-    <a href="https://www.linkedin.com/in/lovisa-svensson-32a7a2186/" target="_blank" rel="noopener noreferrer" onDragStart={preventDragHandler}>
+    <a href="https://www.linkedin.com/in/lovisasve/" target="_blank" rel="noopener noreferrer" onDragStart={preventDragHandler}>
       <svg className="bannericon" style={{ width: `${size}px`, height: `${size}px` }} viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="m17.0391667 17.0433333h-2.9616667v-4.6408333c0-1.1066667-.0225-2.53083333-1.5433333-2.53083333-1.5441667 0-1.78 1.20416663-1.78 2.44916663v4.7225h-2.9616667v-9.5433333h2.845v1.30083333h.0383333c.3975-.75 1.3641667-1.54166666 2.8083334-1.54166666 3.0008333 0 3.5558333 1.975 3.5558333 4.54583333v5.2383333zm-12.5916667-10.84916663c-.95333333 0-1.71916667-.77166667-1.71916667-1.72083334 0-.94833333.76666667-1.71916666 1.71916667-1.71916666.95 0 1.72.77083333 1.72 1.71916666 0 .94916667-.77083333 1.72083334-1.72 1.72083334zm1.485 10.84916663h-2.97v-9.5433333h2.97zm12.5883333-17.0433333h-17.04499997c-.81583333 0-1.47583333.645-1.47583333 1.44083333v17.11833337c0 .7966666.66 1.4408333 1.47583333 1.4408333h17.04249997c.815 0 1.4816667-.6441667 1.4816667-1.4408333v-17.11833337c0-.79583333-.6666667-1.44083333-1.4816667-1.44083333z" /*fill="none"*//></svg>
     </a>
   );
@@ -33,7 +33,7 @@ export function LinkedInIcon({ size = 70 }) {
   
 export function CVIcon({ size = 70 }) {
   return (
-    <a href="https://github.com/spookypannkaka" target="_blank" rel="noopener noreferrer" onDragStart={preventDragHandler}>
+    <a href="/CV_LovisaSve.pdf" target="_blank" rel="noopener noreferrer" onDragStart={preventDragHandler}>
       <svg className="bannericon" style={{ width: `${size}px`, height: `${size}px` }} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M3 24h19v-23h-1v22h-18v1zm17-24h-18v22h18v-22zm-1 1h-16v20h16v-20zm-2 16h-12v1h12v-1zm0-3h-12v1h12v-1zm0-3h-12v1h12v-1zm-7.348-3.863l.948.3c-.145.529-.387.922-.725 1.178-.338.257-.767.385-1.287.385-.643 0-1.171-.22-1.585-.659-.414-.439-.621-1.04-.621-1.802 0-.806.208-1.432.624-1.878.416-.446.963-.669 1.642-.669.592 0 1.073.175 1.443.525.221.207.386.505.496.892l-.968.231c-.057-.251-.177-.449-.358-.594-.182-.146-.403-.218-.663-.218-.359 0-.65.129-.874.386-.223.258-.335.675-.335 1.252 0 .613.11 1.049.331 1.308.22.26.506.39.858.39.26 0 .484-.082.671-.248.187-.165.322-.425.403-.779zm3.023 1.78l-1.731-4.842h1.06l1.226 3.584 1.186-3.584h1.037l-1.734 4.842h-1.044z"/></svg>
     </a>
   );
