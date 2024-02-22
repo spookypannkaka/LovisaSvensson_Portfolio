@@ -9,6 +9,7 @@ function About() {
           <p>My name is Lovisa and I am a master's student at M.Sc. in Media Technology at LiU. Although I have learned a lot of different things through my studies, my passions mainly lie in web and video game development. My dream is to release a video game on my own someday!</p>
           <br/>
           <p>Want to get in contact? See my contact details at the top!</p>
+          <p style={{fontSize: '10px'}}>Also, I made this page in React. <a style={{color: '#FDCCE8', fontSize: '10px', marginLeft: 0, pointerEvents: 'auto'}} href="https://github.com/spookypannkaka/LovisaSvensson_Portfolio">See source code here!</a></p>
         </div>
         {<img src={`${process.env.PUBLIC_URL}/images/groundwithufo.svg`} style={{width: '100%'}} alt="Ground" />}
       </div>
