@@ -1,7 +1,7 @@
 .project-card-container {
     position: relative;
     background-color: #FDCCE8;
-    width: 550px;
+    width: 100%;
     height: 550px;
     display: flex;
     flex-direction: column;
@@ -36,27 +36,37 @@
 }
 
 .overlay-text {
-    font-size: 12px; /* Example default size */
-    /* Other styling */
+    font-size: 12px;
 }
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.project-link {
+    width: 550px;
+}
+
+.title-text {
+    font-size: 30px;
+}
+
 
 /* Styles for screens less than 600px wide */
 @media (max-width: 600px) {
     .overlay-text {
-        font-size: 8px; /* Smaller font size for mobile devices */
-        /* Any additional adjustments for smaller screens */
+        font-size: 8px;
     }
-}
-
-.icon {
-    width: 24px; /* Default width for larger screens */
-    height: 24px; /* Default height for larger screens */
-}
-
-/* Responsive adjustments for screens less than 600px wide */
-@media (max-width: 600px) {
+    .project-link {
+        width: 90%;
+        justify-content: center;
+    }
     .icon {
-        width: 20px; /* Smaller width for mobile devices */
-        height: 20px; /* Smaller height for mobile devices */
+        width: 20px;
+        height: 20px;
+    }
+    .title-text {
+        font-size: 20px;
     }
 }

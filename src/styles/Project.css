@@ -1,0 +1,50 @@
+.goBackLink p {
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #DABAFF;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.goBackLink p:hover {
+    color: #d4faff;
+}
+
+.project-details h2 {
+    font-size: 30px;
+    color: #332B48;
+    margin-left: 0px;
+}
+
+.description {
+    background-color: #FDCCE8;
+    width: 70%;
+    align-self: center;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 30px;
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+
+.description p {
+    margin-bottom: 16px;
+}
+
+.link:hover {
+    color: #D4FAFF;
+}
+
+@media (max-width: 600px) {
+    .project-details h2 {
+        font-size: 20px;
+    }
+    .description {
+        width: 90%;
+    }
+}

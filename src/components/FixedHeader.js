@@ -23,10 +23,9 @@ function FixedHeader() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIconSize(window.innerWidth <= 650 ? 30 : 50); // Smaller icons for screens <= 600px
+      setIconSize(window.innerWidth <= 650 ? 30 : 50);
     };
 
-    // Set the initial size correctly
     handleResize();
 
     window.addEventListener('resize', handleResize);

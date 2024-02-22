@@ -13,8 +13,8 @@ function ProjectCard({project}) {
       };
 
     return (
-    <Link to={`/projects/${projectSlug}`} onDragStart={preventDragHandler} style={{ textDecoration: 'none' }}>
-      <div className="project-card-container" onDragStart={preventDragHandler}>
+    <Link to={`/projects/${projectSlug}`} className="project-link" onDragStart={preventDragHandler} style={{ textDecoration: 'none' }}>
+      <div className="project-card-container">
         <div style={notableStyle.gifContainer}>
             <video 
                 src={`${process.env.PUBLIC_URL}/videos/${project.video}`}
@@ -43,9 +43,9 @@ function ProjectCard({project}) {
         </div>
         <div style={cardContent}>
             <div style={titleContainer}>
-                <span style={textStyles.titleText}>{project.name} ({project.year})</span>
+                <h2 style={textStyles.titleText} className="title-text">{project.name} ({project.year})</h2>
             </div>
-            <span style={textStyles.projectTypeText}>{project.type}</span>
+            <h3 style={textStyles.projectTypeText}>{project.type}</h3>
             <p style={textStyles.projectDescriptionText}>{project.short_desc}</p>
         </div>
         <div className="read-more"><ArrowIcon/></div>
@@ -57,11 +57,11 @@ function ProjectCard({project}) {
 const textStyles = {
     titleText: {
         fontFamily: 'Kanit',
-        fontSize: '30px',
         fontWeight: 500,
         letterSpacing: '1px',
         color: '#332b48',
         marginTop: '5px',
+        marginLeft: '0px',
         textTransform: 'uppercase',       
     },
     projectTypeText: {
@@ -70,6 +70,8 @@ const textStyles = {
         fontWeight: 300,
         color: '#3c4059',
         marginTop: '0px',
+        marginLeft: '0px',
+        marginBottom: '0px',
         textTransform: 'uppercase',    
     },
     projectLanguageText: {
@@ -137,6 +139,7 @@ const notableStyle = {
         width: '100%',
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
         color: '#d4faff',
+        fill: "#D4FAFF",
         textAlign: 'center',
         padding: '10px 0',
 
