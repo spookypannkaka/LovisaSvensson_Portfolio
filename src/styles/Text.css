@@ -49,6 +49,7 @@ p, ul {
     h1 {
         font-size: 36px; /* Smaller size for mobile */
         margin-bottom: 3px; /* Adjusted spacing for mobile */
+        margin-left: 15px;
     }
 
     h2 {

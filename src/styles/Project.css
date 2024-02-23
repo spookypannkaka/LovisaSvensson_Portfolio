@@ -44,11 +44,18 @@
     color: #D4FAFF;
 }
 
+.title {
+    margin-left: 30px;
+}
+
 @media (max-width: 600px) {
     .project-details h2 {
         font-size: 20px;
     }
     .description {
         width: 90%;
+    }
+    .title {
+        margin-left: 15px;
     }
 }

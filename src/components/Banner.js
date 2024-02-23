@@ -29,7 +29,7 @@ function Banner() {
     <div style={containerStyle}>
       <StarrySky />
       <div>
-        <h1 style={{color: '#DABAFF', textAlign: 'center'}}>Lovisa Svensson</h1>
+        <h1 style={{color: '#DABAFF', textAlign: 'center', marginLeft: 0}}>Lovisa Svensson</h1>
         <h3 style={{textAlign: 'center', marginLeft: 0, color: '#DABAFF'}}>m.sc in media technology / civilingenjör i medieteknik</h3>
 
         <div style={iconStyle}>

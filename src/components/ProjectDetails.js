@@ -34,7 +34,7 @@ function ProjectDetails() {
         <div onClick={goBack} className='goBackLink'>
           <p>{'<'} Go Back</p>
         </div>
-      <h1 style={{marginLeft: '30px'}}>{project.name}</h1>
+      <h1 className='title' >{project.name}</h1>
       <h3>{project.type}</h3>
 
       <div style={video.container}>
