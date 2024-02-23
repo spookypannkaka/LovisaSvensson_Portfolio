@@ -24,8 +24,8 @@
 
 @media (max-width: 600px) {
     .textArea {
-        margin-bottom: -30px; /* Increase negative margin for smaller screens if needed */
-        max-width: 60%; /* Optionally increase width for smaller screens */
+        margin-bottom: 0px;
+        max-width: 90%;
     }
 
     .textArea p {
