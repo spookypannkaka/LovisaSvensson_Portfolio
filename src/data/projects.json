@@ -21,7 +21,9 @@
         "technologies": "Unity",
         "video": "thespaceship.mp4",
         "short_desc": "Two players cooperate to get through a spaceship by solving puzzles without seeing what is on the other player's screen. The game was developed to be played in a public environment using different physical arcade controllers to play.",
-        "long_desc": "This goes into more detail about what I did in the project"
+        "long_desc": "This goes into more detail about what I did in the project",
+        "markdown": "the-spaceship.md",
+        "github": "https://github.com/spookypannkaka/The-Spaceship"
     },
     {
         "name": "Sjungande Phadderister",
@@ -33,6 +35,7 @@
         "video": "sjungandephadderister.mp4",
         "short_desc": "Steer your character by making higher or lower tones with your voice and collect candies. A web game entirely hard coded in JavaScript.",
         "long_desc": "This goes into more detail about what I did in the project",
+        "markdown": "sjungande-phadderister.md",
         "github": "https://github.com/spookypannkaka/Sjungande-Phadderister",
         "link": "https://spookypannkaka.itch.io/sjungande-phadderister"
     },
@@ -46,6 +49,7 @@
         "video": "thebookrecommender.mp4",
         "short_desc": "A machine learning project to allow web users to write a description for a book they would like to read, upon which the website recommends a set of books to them.",
         "long_desc": "This goes into more detail about what I did in the project",
+        "markdown": "the-book-recommender.md",
         "github": "https://github.com/spookypannkaka/TNM108_BookRecommender"
     },
     {
