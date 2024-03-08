@@ -8,7 +8,7 @@ import projects from '../data/projects.json';
 import technicalSkills from '../data/technicalskills.json';
 
 function Home() {
-  const numberOfNotableProjects = 4;
+  const numberOfNotableProjects = 5;
 
   return (
     <div>
