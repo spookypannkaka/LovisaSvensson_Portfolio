@@ -4,7 +4,7 @@ import projects from '../data/projects.json';
 import slugify from '../utils/slugify';
 import ReactMarkdown from 'react-markdown';
 
-import { DurationIcon, PeopleIcon, ToolsIcon, ArrowIcon, GitHubIcon, StarIcon } from './Icons';
+import { DurationIcon, PeopleIcon, ToolsIcon, GitHubIcon, StarIcon } from './Icons';
 
 import '../styles/Project.css';
 
@@ -38,15 +38,27 @@ function ProjectDetails() {
       <h3>{project.type}</h3>
 
       <div style={video.container}>
-        <video 
-                src={`${process.env.PUBLIC_URL}/videos/${project.video}`}
-                alt="Project animation"
-                autoPlay 
-                loop 
-                muted
-                playsInline
-                disablePictureInPicture
+        {project.embed ? (
+          <div style={responsiveBox}>
+            <iframe
+              src={project.embed}
+              allow="autoplay; fullscreen"
+              allowFullScreen
+              title={project.name}
+              style={responsiveMedia}
             />
+          </div>
+        ) : (
+          <video
+            src={`${process.env.PUBLIC_URL}/videos/${project.video}`}
+            autoPlay
+            loop
+            muted
+            playsInline
+            disablePictureInPicture
+            style={responsiveMedia}
+          />
+        )}
         <div style={video.banner}>
             <div style={iconTextContainer}>
                 <DurationIcon/>
@@ -126,5 +138,25 @@ const iconTextContainer = {
 
     fill: '#332B48'
 }
+
+const responsiveBox = {
+  position: 'relative',
+  width: '100%',
+  paddingTop: '56.25%', // 16:9 aspect ratio
+  overflow: 'hidden',
+  marginBottom: '10px'
+};
+
+const responsiveMedia = {
+  position: 'absolute',
+  top: 0,
+  left: 0,
+  width: '100%',
+  height: '100%',
+  objectFit: 'cover',
+  border: 'none',
+  display: 'block'
+};
+
 
 export default ProjectDetails;

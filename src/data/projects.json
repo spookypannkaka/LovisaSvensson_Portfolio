@@ -1,5 +1,27 @@
 [
     {
+        "name": "Adaptive difficulty in VR",
+        "year": "2025",
+        "type": "Master thesis in Data Technology",
+        "duration": "4 months",
+        "group_size": "1",
+        "technologies": "Unity, MLAgents, Python",
+        "short_desc": "A project to develop opponent bot models that can adjust to different player skill levels, to explore if this is a better skill match for players.",
+        "markdown": "adaptive-difficulty.md",
+        "embed": "https://player.vimeo.com/video/1089993531?h=9b01f5e9a1&autoplay=1&muted=1&background=1&loop=1&autopause=0&badge=0&player_id=0&app_id=58479"
+    },
+    {
+        "name": "MyClimbingJournal",
+        "year": "2025",
+        "type": "Indoor climbing mobile app",
+        "duration": ">1 year",
+        "group_size": "1",
+        "technologies": "React Native (TypeScript), Redux, Supabase",
+        "short_desc": "A mobile app to help users log indoor climbing routes, follow their friends and keep updated on their favorite gyms. Work in progress for a commercial release.",
+        "markdown": "myclimbingjournal.md",
+        "embed": "https://player.vimeo.com/video/1090003888?h=89b18db3f4&autoplay=1&muted=1&background=1&loop=1&autopause=0&badge=0&player_id=0&app_id=58479"
+    },
+    {
         "name": "Beehive",
         "year": "2023",
         "type": "Competitive online multiplayer game",
