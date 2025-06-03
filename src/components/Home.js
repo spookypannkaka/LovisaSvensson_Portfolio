@@ -68,6 +68,7 @@ const styles = {
       flexFlow: 'row wrap',
       justifyContent: 'center',
       gap: '40px 20px',
+      alignItems: 'stretch',
     },
     skillContainer: {
       //width: '90%',

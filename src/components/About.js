@@ -6,7 +6,7 @@ function About() {
       <div className="footerContainer">
         <div className="textArea">
           <h2>Hello!!</h2>
-          <p>My name is Lovisa and I am a master's student at M.Sc. in Media Technology at LiU. Although I have learned a lot of different things through my studies, my passions mainly lie in web and video game development. My dream is to release a video game on my own someday!</p>
+          <p>My name is Lovisa and I've graduated from M.Sc. in Media Technology and Engineering at LiU. Although I have learned a lot of different things through my studies, my passions mainly lie in mobile and web development.</p>
           <br/>
           <p>Want to get in contact? See my contact details at the top!</p>
           <p style={{fontSize: '10px'}}>Also, I made this page in React. <a style={{color: '#FDCCE8', fontSize: '10px', marginLeft: 0, pointerEvents: 'auto'}} href="https://github.com/spookypannkaka/LovisaSvensson_Portfolio">See source code here!</a></p>

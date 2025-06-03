@@ -123,6 +123,7 @@ const cardContent = {
     flexDirection: 'column',
     position: 'relative',
     padding: '15px', // Added padding for overall internal spacing
+    minHeight: '210px',
 }
 
 const titleContainer = {
