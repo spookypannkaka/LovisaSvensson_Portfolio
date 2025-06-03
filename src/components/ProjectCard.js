@@ -16,8 +16,8 @@ function ProjectCard({project}) {
     <Link to={`/projects/${projectSlug}`} className="project-link" onDragStart={preventDragHandler} style={{ textDecoration: 'none' }}>
       <div className="project-card-container">
         <div style={notableStyle.gifContainer}>
-            <video 
-                src={`${process.env.PUBLIC_URL}/videos/${project.video}`}
+            {/*<video 
+                src={project.video.startsWith('http') ? project.video : `${process.env.PUBLIC_URL}/videos/${project.video}`}
                 alt="Project animation" 
                 style={notableStyle.gifImage}
                 autoPlay 
@@ -25,7 +25,33 @@ function ProjectCard({project}) {
                 muted
                 playsInline
                 disablePictureInPicture
-            ></video>
+            ></video>*/}
+            {project.embed ? (
+                <div style={notableStyle.responsiveBox}>
+                <iframe
+                    src={project.embed}
+                    allow="autoplay; fullscreen"
+                    allowFullScreen
+                    title={project.name}
+                    style={notableStyle.responsiveMedia}
+                />
+                <div
+                    style={notableStyle.clickCatcher}
+                    onClick={() => window.location.href = `/projects/${projectSlug}`}
+                />
+                </div>
+                ) : (
+                <video
+                    src={`${process.env.PUBLIC_URL}/videos/${project.video}`}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    disablePictureInPicture
+                    style={notableStyle.gifImage}
+                />
+            )}
+
             <div style={notableStyle.overlay} className="overlay-text">
                 <div style={notableStyle.iconTextContainer}>
                     <DurationIcon/>
@@ -120,18 +146,40 @@ const notableStyle = {
         // Border
         border: '5px solid #fc9bd3',
     },
-    gifContainer: {
+    /*gifContainer: {
         position: 'relative',
         width: '100%',
         height: 'auto',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+    },*/
+    gifContainer: {
+        position: 'relative',
+        width: '100%',
+        height: '100%',
+        overflow: 'hidden',
     },
     gifImage: {
         width: '100%',
         height: '100%',
         objectFit: 'cover',
+    },
+    responsiveBox: {
+        position: 'relative',
+        width: '100%',
+        paddingTop: '56.25%', // use 56.25% for 16:9 ratio
+        overflow: 'hidden',
+    },
+    responsiveMedia: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        objectFit: 'cover',
+        border: 'none',
+        display: 'block',
     },
     overlay: {
         position: 'absolute',
@@ -151,6 +199,15 @@ const notableStyle = {
         display: 'flex',
         alignItems: 'center',
         gap: '5px',
+    },
+    clickCatcher: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        cursor: 'pointer',
+        zIndex: 5,
     }
   }
 export default ProjectCard;
