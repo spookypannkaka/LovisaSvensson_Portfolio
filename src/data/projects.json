@@ -11,6 +11,18 @@
         "embed": "https://player.vimeo.com/video/1089993531?h=9b01f5e9a1&autoplay=1&muted=1&background=1&loop=1&autopause=0&badge=0&player_id=0&app_id=58479"
     },
     {
+        "name": "Trakten",
+        "year": "2025",
+        "type": "Web app for nature lovers",
+        "duration": "1 month",
+        "group_size": "1",
+        "technologies": "React (TypeScript), Next, OpenStreetMap, Supabase",
+        "short_desc": "A web app that displays nature species for different areas in Sweden.",
+        "markdown": "trakten.md",
+        "link": "https://trakten.vercel.app",
+        "embed": "https://player.vimeo.com/video/1123506542?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+    },
+    {
         "name": "MyClimbingJournal",
         "year": "2025",
         "type": "Indoor climbing mobile app",
