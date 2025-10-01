@@ -5,7 +5,7 @@ export const staticColors = {
   lightGray: '#E0D8F3',
   gray: '#A9A5B4',
   green: '#32D581',
-  purple: '#7139B5',
+  purple: '#331E4E',
 } as const
 
 // Semantic palette keys per mode:
