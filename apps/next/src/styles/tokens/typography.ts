@@ -64,5 +64,5 @@ export const defaultTypeVariants: Record<TypeVariant, TypeSpec> = {
   body1:  { size: 'md',  lineHeight: 'lg',  weight: 'normal',   family: 'body'    },
   body2:  { size: 'sm',  lineHeight: 'md',  weight: 'normal',   family: 'body'    },
   caption:{ size: 'xs',  lineHeight: 'sm',  weight: 'semibold', family: 'body', fontStyle: 'italic' },
-  button: { size: 'lg',  lineHeight: 'md',  weight: 'bold',     family: 'body', textTransform: 'uppercase' },
+  button: { size: 'md',  lineHeight: 'md',  weight: 'bold',     family: 'body', textTransform: 'uppercase' },
 };
