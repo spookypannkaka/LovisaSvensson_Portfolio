@@ -20,7 +20,7 @@
         "short_desc": "A web app that displays nature species for different areas in Sweden.",
         "markdown": "trakten.md",
         "link": "https://trakten.vercel.app",
-        "embed": "https://player.vimeo.com/video/1123506542?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        "embed": "https://player.vimeo.com/video/1123506542?autoplay=1&muted=1&background=1&loop=1&autopause=0&badge=0&player_id=0&app_id=58479"
     },
     {
         "name": "MyClimbingJournal",
